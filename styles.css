@@ -1,6 +1,5 @@
 html, body {
     height: 100%;
-    box-sizing: border-box;
 }
 
 .main {
@@ -45,18 +44,32 @@ html, body {
 .container2 {
     margin-top: 20px;
     margin-bottom: 20px;
+
     background: black;
     border: black solid 15px;
-    height: 150px;
-
+    height: 130px;
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: auto;
 }
 
+/*Tablet*/
+@media only screen and (max-width: 768px) and (min-width: 481px) {
+    .container2 {
+        background: yellow;
+        border: yellow 15px;
+        height: 265px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container2>div{
+        margin: 15px;
+    }
+}
+
 .left-block {
     margin-right: 15px;
-    flex: 2;
     background-color: gray;
     border: 15px solid gray;
 
@@ -80,7 +93,6 @@ html, body {
 
 
 .right-block {
-    flex: 1;
     background-color: #c71226;
     border: 15px solid #c71226;
 
