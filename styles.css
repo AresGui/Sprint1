@@ -35,10 +35,40 @@ html, body {
     margin-right: 15px;
 }
 
-
 .block2 {
     background: yellow;
     border: 15px solid orange;
+}
+
+/*Mobile phone*/
+@media only screen and (max-width: 480px) and (min-width: 320px) {
+    .container1{
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .block1{
+        flex:4;
+        display: flex;
+        flex-direction: column;
+    }
+    .block1>.subblock2{
+        flex: 1;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    .block1>div {
+        flex: 1;
+        align-content: space-around;
+    }
+
+    .block2{
+        flex: 1;
+    }
 }
 
 .container2 {
@@ -51,21 +81,6 @@ html, body {
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: auto;
-}
-
-/*Tablet*/
-@media only screen and (max-width: 768px) and (min-width: 481px) {
-    .container2 {
-        background: yellow;
-        border: yellow 15px;
-        height: 265px;
-        display: flex;
-        flex-direction: column;
-    }
-
-    .container2>div{
-        margin: 15px;
-    }
 }
 
 .left-block {
@@ -107,8 +122,85 @@ html, body {
     background-color: hwb(60 70% 14%);
 }
 
+/*Mobile phone*/
+@media only screen and (max-width: 480px) and (min-width: 320px) {
+    .container2 {
+        background: yellow;
+        border: yellow 15px;
+        height: 520px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container2>div{
+        margin: 15px;
+    }
+
+    .left-block {
+        margin-right: 15px;
+        background-color: rgb(48, 136, 127);
+        border: 15px solid rgb(48, 136, 127);
+        
+        display: flex;
+        flex-direction: column;
+        flex:4;
+    }
+
+    .left-block>div{
+        height: 100%;
+    }
+
+    .column{
+        background:rgb(96, 146, 159);
+    }
+
+    .row {
+        background: lightblue;
+    }
+
+    .right-block {
+        background-color: #dd8818;
+        border: 15px solid #dd8818;
+
+        flex:1;
+
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: 50px 50px;
+        grid-gap: 10px;
+    
+    }
+
+    .right-column {
+        background-color: hwb(44 64% 16%);
+    }
+}
+
 .container3 {
     background: rgb(184, 177, 44);
     border: 15px solid black;
     height: 20px;
 }
+
+/*Mobile phone*/
+@media only screen and (max-width: 480px) and (min-width: 320px) {
+    .container3{
+        height: 50px;
+    }
+}
+
+/*Tablet*/
+@media only screen and (max-width: 768px) and (min-width: 481px) {
+    .container2 {
+        background: yellow;
+        border: yellow 15px;
+        height: 265px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container2>div{
+        margin: 15px;
+    }
+}
+
