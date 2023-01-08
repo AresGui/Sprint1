@@ -1,0 +1,155 @@
+html body {
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.container {
+    height: 375px;
+    margin: 30px;
+    background-image: url("images/header3.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.header {
+    margin: 10px 10px;
+    height: 70px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 70px;
+}
+
+.navigation-bar {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.icono {
+    width: 20px;
+    margin-right: 10px;
+}
+
+.elemento {
+    display: flex;
+    flex-direction: row;
+    font-size: medium;
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: gray;
+    font-weight: 300;
+    align-items: center;
+}
+
+.redes {
+    display: flex;
+    flex-direction: row;
+}
+
+.img {
+    width: 20px;
+    margin: 15px;
+}
+
+.roll-over:hover {
+    background-color: #d6d5d5;
+    color: white;
+    padding: 0px 10px;
+}
+
+/*Tablet*/
+@media only screen and (max-width: 768px) and (min-width: 481px) {
+    .container {
+        height: 220px;
+    }
+
+    .logo {
+        width: 30px;
+    }
+
+    .header {
+        margin: 10px;
+        height: 30px;
+        width: 100%;
+    }
+
+    .navigation-bar {
+        flex-flow: wrap;
+    }
+
+    .navigation-bar > div {
+        height: 7px;
+        margin: 6px;
+        font-size: small;
+        align-self: flex-start;
+    }
+
+    .icono {
+        width: 10px;
+        margin-right: 5px;
+    }
+
+    .redes {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .img {
+        width: 10px;
+        margin: 3px;
+        flex: 1;
+    }
+}
+
+/*Mobile phone*/
+@media only screen and (max-width: 480px) and (min-width: 320px) {
+    .container {
+        height: 130px;
+    }
+
+    .logo {
+        width: 25px;
+    }
+
+    .header {
+        margin: 5px;
+        height: 20px;
+        width: 100%;
+    }
+
+    .navigation-bar {
+        flex-flow: wrap;
+    }
+
+    .navigation-bar > div {
+        height: 5px;
+        margin: 2px;
+        font-size: xx-small;
+        align-self: flex-start;
+    }
+
+    .icono {
+        width: 5px;
+        margin-right: 5px;
+    }
+
+    .redes {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .img {
+        width: 5px;
+        margin: 3px;
+        flex: 1;
+    }
+}
