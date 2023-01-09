@@ -1,13 +1,13 @@
 html body {
     max-width: 100%;
-    overflow: hidden;
 }
 
 .container {
-    height: 375px;
-    margin: 30px;
+    margin: 30px 30px 8px 30px;
+    height: 320px;
+
     background-image: url("images/header3.png");
-    background-size: 100%;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
     display: flex;
     flex-direction: row;
@@ -66,6 +66,73 @@ html body {
     padding: 0px 10px;
 }
 
+
+
+.container2 {
+    display: flex;
+    flex-direction: row;
+    margin: 0px 30px 30px 30px;
+    height: auto;
+    justify-content: center; /*!!*/
+}
+
+.block1 {
+    background-color: rgb(224, 220, 220);
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+    flex: 3;
+    margin-right: 8px;
+}
+
+.img-article {
+
+    display: flex;
+    width: 100%;
+
+    /*max-width: 300px;*/
+}
+
+.img-article>img {
+    width: 100%;
+    /*max-width: 300px;*/
+}
+
+.block1>div {
+    background-color: rgb(249, 247, 247);
+    /*width: auto;*/
+    border: 10px solid rgb(249, 247, 247);
+
+    flex: 1;
+    margin: 10px;
+}
+
+/*.cuadro-art > div{
+    padding: 0px;
+}*/
+
+.articulo {
+    column-count: 2;
+    column-gap: 10px;
+    color: rgb(64, 63, 63);
+}
+
+.leer{
+    color: rgb(146, 143, 143);
+}
+
+.block2 {
+    background-color: rgb(224, 220, 220);
+    flex: 1;
+    padding: 15px;
+    text-align: center;
+}
+
+.titulo{
+    background-color: salmon;
+    color: white;
+}
+
 /*Tablet*/
 @media only screen and (max-width: 768px) and (min-width: 481px) {
     .container {
@@ -86,7 +153,7 @@ html body {
         flex-flow: wrap;
     }
 
-    .navigation-bar > div {
+    .navigation-bar>div {
         height: 7px;
         margin: 6px;
         font-size: small;
@@ -113,7 +180,7 @@ html body {
 /*Mobile phone*/
 @media only screen and (max-width: 480px) and (min-width: 320px) {
     .container {
-        height: 130px;
+        height: 120px;
     }
 
     .logo {
@@ -130,7 +197,7 @@ html body {
         flex-flow: wrap;
     }
 
-    .navigation-bar > div {
+    .navigation-bar>div {
         height: 5px;
         margin: 2px;
         font-size: xx-small;
